@@ -1,0 +1,526 @@
+html,
+body {
+  font-family: "Lato",sans-serif;
+  height: 100%;
+  max-width: 1024px;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+section.examples h4 a::after,
+section.hero .intro a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(0,0,0,0.1);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+section.examples h4 a:hover::after,
+section.hero .intro a:hover::after,
+section.examples h4 a:focus::after,
+section.hero .intro a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img,
+video {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url(../js/ie/boxsizing.htc);
+}
+
+dl {
+  overflow: hidden;
+}
+
+dt,
+dd {
+  float: left;
+}
+
+dt {
+  clear: left;
+}
+
+dd {
+  margin: 0 0 0 10px;
+  margin: 0 0 0 0.625rem;
+  font-weight: bold;
+}
+
+.logo a {
+  font-size: 24px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.example-container {
+  background: #C9C9C9;
+  border-radius: 6.4px;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  min-width: 250px;
+  width: 30%;
+  max-width: 300px;
+  height: 500px;
+  display: inline-block;
+  margin: 1%;
+}
+
+.example-container img {
+  width: 100%;
+}
+
+.example-container h3,
+.example-container p {
+  padding: 8px;
+  padding: 0.5rem;
+}
+
+section.contact {
+  height: 100%;
+  width: 100%;
+  background: #C2EBCF;
+  padding-top: 80px;
+  padding-top: 5rem;
+}
+
+section.contact h4 {
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
+}
+
+section.contact textarea {
+  width: 40%;
+  height: 30%;
+  font-size: 25.6px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  border: 0;
+  background: rgba(0,0,0,0.1);
+  margin: 0 auto;
+}
+
+section.contact button {
+  background: transparent;
+  border: 3px solid rgba(0,0,0,0.1);
+  border-radius: 4.8px;
+  border-radius: 0.3rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+section.examples {
+  height: 100%;
+  text-align: center;
+  display: block;
+  background: white;
+  padding-top: 80px;
+  padding-top: 5rem;
+}
+
+section.examples h4 {
+  color: #919295;
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: 300;
+  padding-top: 32px;
+  padding-top: 2rem;
+}
+
+section.examples h4 a {
+  text-decoration: none;
+  position: relative;
+  color: #6C6D6D;
+}
+
+section.examples .example-container-wrapper {
+  margin-top: 64px;
+  margin-top: 4rem;
+}
+
+section.examples[min-width~="500px"] .example_container {
+  width: 100%;
+}
+
+section.hero {
+  height: 100%;
+  text-align: center;
+  background: #C9C9C9;
+}
+
+section.hero .intro {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 20%;
+}
+
+section.hero .intro h1 span {
+  background: black;
+  color: white;
+  padding: 3.2px 8px;
+  padding: 0.2rem 0.5rem;
+  line-height: 1.6;
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+section.hero .intro a {
+  padding: 8px 0;
+  text-decoration: none;
+  position: relative;
+  color: black;
+  top: 64px;
+  top: 4rem;
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+section.hero[min-width~="500px"] .intro {
+  width: 80%;
+}
+
+section.hero[min-width~="500px"] .intro h1 span {
+  font-size: 64px;
+  font-size: 4rem;
+}
+
+section.hero[min-width~="1200px"] .intro {
+  width: 50%;
+}
+
+header {
+  background: rgba(0,0,0,0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 52.8px;
+  height: 3.3rem;
+  overflow: hidden;
+  -webkit-transition: height 1s, background 1s;
+  transition: height 1s, background 1s;
+  z-index: 999;
+  max-width: 1024px;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+header.show {
+  height: 260.8px;
+  height: 16.3rem;
+  background: white;
+}
+
+header .logo {
+  max-height: 40px;
+}
+
+header nav ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+
+header nav li {
+  border-bottom: 1px solid grey;
+  display: block;
+  text-decoration: none;
+  margin: 0 8px;
+  margin: 0 0.5rem;
+  padding: 0 8px;
+  padding: 0 0.5rem;
+  text-align: center;
+}
+
+header nav li a {
+  padding: 16px 8px;
+  padding: 1rem 0.5rem;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+header nav li a:hover {
+  background: none;
+}
+
+header nav li button {
+  margin: 8px;
+  margin: 0.5rem;
+  background: transparent;
+  border: 2px solid rgba(0,0,0,0.1);
+  border-radius: 3.2px;
+  border-radius: 0.2rem;
+}
+
+header nav li.menu {
+  border: 1px solid black;
+  border-radius: 6.4px;
+  border-radius: 0.4rem;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 8px;
+  top: 0.5rem;
+}
+
+header nav li.menu a {
+  padding: 8px;
+  padding: 0.5rem;
+}
+
+header .logo {
+  font-family: "Lato",sans-serif;
+  display: inline-block;
+  margin-top: 8px;
+  margin-top: 0.5rem;
+  margin-left: 32px;
+  margin-left: 2rem;
+}
+
+header .logo a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+header[min-width~="615px"] {
+  webkit-transition: height 0s;
+  transition: height 0s;
+  overflow: auto;
+}
+
+header[min-width~="615px"] nav {
+  display: inline-block;
+  position: absolute;
+  right: 16px;
+  right: 1rem;
+  width: 70%;
+  top: 0px;
+  top: 0rem;
+}
+
+header[min-width~="615px"] nav ul {
+  position: absolute;
+  right: 16px;
+  right: 1rem;
+  margin-top: 0px;
+  margin-top: 0rem;
+}
+
+header[min-width~="615px"] nav ul li {
+  border-bottom: 0px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+header[min-width~="615px"] nav ul li a:hover {
+  background: lightblue;
+}
+
+header[min-width~="615px"] nav ul li.menu {
+  display: none;
+}
+
+header[min-width~="615px"] .logo {
+  font-family: "Lato",sans-serif;
+  margin-top: 8px;
+  margin-top: 0.5rem;
+  margin-left: 32px;
+  margin-left: 2rem;
+}
+
+section.hero {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1024px;
+  max-width: 64rem;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+section.examples {
+  position: relative;
+  top: 100%;
+  z-index: 99;
+}
+
+section.contact {
+  position: relative;
+  top: 100%;
+  z-index: 99;
+}
