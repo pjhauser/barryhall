@@ -1,0 +1,24 @@
+//-
+	@file Demo page for the hero module
+	@author Phil Hauser phil.hsr@gmail.com
+	@extends page_templates/_factory.jade
+	@requires mixins/hero/[MODFILE]
+
+//- Page dependencies
+include _hero
+
+//- Page template
+extends ../../templates/_page_default/_page_default
+
+//- Page variables to pass to template
+block page_vars
+	- var page = {}
+	- page.id = "hero"
+	- page.title = "hero"
+	- page.mainScript = "hero.js"
+
+
+//- Content block
+block content
+
+	+hero()

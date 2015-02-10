@@ -1,0 +1,28 @@
+//-
+	@file Page instance: index 
+	@extends _page_default/_page_default
+
+//- Page dependencies
+include ../../organisms/_nav/_nav
+include ../../organisms/_hero/_hero
+include ../../organisms/_examples/_examples
+include ../../organisms/_contact/_contact
+
+
+//- Page template
+extends ../../templates/_page_default/_page_default
+
+//- Page variables to pass to template
+block page_vars
+	- var page = {}
+	- page.id = "index"
+	- page.title = "index"
+	- page.mainScript = "index.js"
+
+
+//- Content block
+block content
+	+nav()
+	+hero()
+	+examples()
+	+contact()

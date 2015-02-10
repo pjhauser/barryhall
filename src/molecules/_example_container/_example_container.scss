@@ -1,0 +1,22 @@
+/**
+ * @file Defines styles for the example-container page
+ * @author Phil Hauser phil.hsr@gmail.com
+ */
+
+.example-container{
+	background: #C9C9C9;
+	border-radius: 0.4rem;
+	overflow: hidden;
+	min-width: 250px;
+	width: 30%;
+	max-width: 300px;
+	height: 500px;
+	display: inline-block;
+	margin: 1%;
+	img{
+		width: 100%;
+	}
+	h3,p{
+		padding: 0.5rem;
+	}
+}

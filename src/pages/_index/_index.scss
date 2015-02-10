@@ -1,0 +1,25 @@
+/**
+ * @file Defines styles for the index page
+ * @author    
+ */
+
+section.hero{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-width: 64rem;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+section.examples{
+	position: relative;
+	top: 100%;
+	z-index: 99;
+}
+
+section.contact{
+	position: relative;
+	top: 100%;
+	z-index: 99;
+}

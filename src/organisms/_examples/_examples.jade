@@ -1,0 +1,41 @@
+//-
+	@file Defines a examples mixin
+	@author Phil Hauser phil.hsr@gmail.com
+
+//- Dependencies
+include ../../molecules/_example_container/_example_container
+
+//- Definition
+mixin examples()
+
+	section.examples
+
+		h4 My Experience
+
+		.example-container-wrapper
+			+example_container({
+				title: "Manufacturing",
+				img: "/img/temp.jpg",
+				body: "Lorem ipsum Tempor adipisicing voluptate occaecat non culpa \
+				laboris aliqua labore ea do aute laboris dolore magna Duis consequat \
+				exercitation veniam qui reprehenderit magna reprehenderit ullamco sed amet."
+				})
+
+			+example_container({
+				title: "Finance",
+				img: "/img/temp.jpg",
+				body: "Lorem ipsum Tempor adipisicing voluptate occaecat non culpa \
+				laboris aliqua labore ea do aute laboris dolore magna Duis consequat \
+				exercitation veniam qui reprehenderit magna reprehenderit ullamco sed amet."
+				})
+
+			+example_container({
+				title: "Digital Creative",
+				img: "/img/temp.jpg",
+				body: "Lorem ipsum Tempor adipisicing voluptate occaecat non culpa \
+				laboris aliqua labore ea do aute laboris dolore magna Duis consequat \
+				exercitation veniam qui reprehenderit magna reprehenderit ullamco sed amet."
+				})
+
+		h4 If you want any more information please 
+			a(href="#content") contact me

@@ -1,0 +1,59 @@
+/**
+ * @file Defines styles for the hero page
+ * @author Phil Hauser phil.hsr@gmail.com
+ */
+
+section.hero{
+	height: 100%;
+	text-align: center;
+	background: #C9C9C9;
+
+	.intro{
+		width: 90%;
+		text-align: center;
+		margin: 0 auto;
+		position: relative;
+		top: 20%;
+		h1 span{
+			background: black;
+			color: white;
+			padding: 0.2rem 0.5rem;
+			line-height: 1.6;
+			font-size: 2rem;
+			font-weight: 300;
+			letter-spacing: 4px;
+		}
+
+		a {
+			padding: 8px 0;
+			text-decoration: none;
+			position: relative;
+			color: black;
+			top: 4rem;
+			font-size: 2rem;
+
+			@extend %hover-effect;
+		}
+
+
+	}
+
+
+
+
+	@include at-min-width("500px"){
+		.intro{
+			width: 80%;
+			h1 span{
+				font-size: 4rem;
+			}
+		}
+	}
+
+	@include at-min-width("1200px"){
+		.intro{
+			width: 50%;
+		}
+	}
+
+}
