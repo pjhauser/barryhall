@@ -17,7 +17,7 @@
     <meta name="keywords">
     <meta name="viewport" content="width=device-width">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]>
     <script src="/js/ie/eventlistener.js"></script>
@@ -65,10 +65,20 @@
     </section>
     <section class="contact">
       <h4>Want to get in touch</h4>
-      <textarea></textarea>
-      <button>Send</button>
-      <p>I will get back to you soon </p>
+      <div class="form-wrapper">
+        <p class="help">Tell me how I can help:
+          <form>
+            <label>e-mail</label>
+            <input type="email"/>
+            <label>Phone</label>
+            <input type="telephone"/>
+            <label>Details</label>
+            <textarea placeholder="I have a .NET project that I need help with."></textarea>
+            <button>Send</button>
+          </form>
+        </p>
+      </div>
     </section>
-    <script src="/js/hall-software.min.js"></script>
+    <script src="/js/nebula-clothing.min.js"></script>
   </body>
 </html>

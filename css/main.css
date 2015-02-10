@@ -255,8 +255,9 @@ section.contact h4 {
   margin-bottom: 3rem;
 }
 
-section.contact textarea {
-  width: 40%;
+section.contact textarea,
+section.contact input {
+  width: 100%;
   height: 30%;
   font-size: 25.6px;
   font-size: 1.6rem;
@@ -264,6 +265,20 @@ section.contact textarea {
   border: 0;
   background: rgba(0,0,0,0.1);
   margin: 0 auto;
+  border-bottom: 3.2px solid rgba(0,0,0,0.3);
+  border-bottom: 0.2rem solid rgba(0,0,0,0.3);
+}
+
+section.contact input {
+  height: 28.8px;
+  height: 1.8rem;
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+  width: 30%;
+  min-width: 320px;
+  min-width: 20rem;
+  display: block;
+  margin-left: 0;
 }
 
 section.contact button {
@@ -273,6 +288,27 @@ section.contact button {
   border-radius: 0.3rem;
   font-size: 24px;
   font-size: 1.5rem;
+  width: 100%;
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+
+section.contact button:hover {
+  background: rgba(0,0,0,0.3);
+}
+
+section.contact .form-wrapper {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  height: 80%;
+}
+
+section.contact .form-wrapper form {
+  width: 100%;
+  height: 100%;
+  margin-left: 32px;
+  margin-left: 2rem;
 }
 
 section.examples {
@@ -350,12 +386,8 @@ section.hero[min-width~="500px"] .intro {
 }
 
 section.hero[min-width~="500px"] .intro h1 span {
-  font-size: 64px;
-  font-size: 4rem;
-}
-
-section.hero[min-width~="1200px"] .intro {
-  width: 50%;
+  font-size: 48px;
+  font-size: 3rem;
 }
 
 header {
@@ -515,12 +547,12 @@ section.hero {
 
 section.examples {
   position: relative;
-  top: 100%;
+  top: 70%;
   z-index: 99;
 }
 
 section.contact {
   position: relative;
-  top: 100%;
+  top: 70%;
   z-index: 99;
 }
